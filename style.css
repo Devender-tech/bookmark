@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+}
+
+:root{
+    font-size: 10px;
+}
+
+.container{
+     padding: 0 25px 0 25px;
+     margin: 20px 0 20px 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 25px 0;
+}
+
+header .menu-toggle{
+    font-size: 2.6rem;
+    z-index: 3;
+}
+
+header .mobile-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(229, 31%, 21%, 0.959);
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    list-style: none;
+    top: -100%;
+    transition: top 0.3s;
+    
+}
+
+header .mobile-nav.active{
+    top: 0%;
+    
+}
+.mobile-nav li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-bottom-width: 1px solid hsl(229, 27%, 53%);
+    font-weight: 400;
+    
+}
+.mobile-nav a.login-button{
+    text-decoration: none;
+    border: 1px solid white;
+    display: block;
+    padding: 5px 50px 5px 50px;
+
+}
+
+/* HEADER-INFORMATION */
+
+.header-info{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header-info .image img{
+    height: 250px;
+    width: 100%;
+}
+
+h2.heading{
+    font-size: 3rem;
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 20px;
+}
+p.para{
+    font-size: 1.6rem;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.header-buttons{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.primary-button {
+text-decoration: none;
+color: white;
+background-color:hsl(231, 69%, 60%) ;
+padding: 15px;
+margin-top: 20px;
+display: block;
+border-radius: 4px;
+text-align: center;
+font-size: 1.4rem;
+}
+
+.header-text a.firefox-button{
+text-decoration: none;
+color: white;
+background-color:hsl(229, 8%, 60%) ;
+padding: 15px;
+margin-top: 20px;
+display: block;
+border-radius: 4px;
+}
+
+
+/* Features TAB */
+
+.features-tab .buttons ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 1.8rem;
+    margin:20px 0 20px 0;
+    border-bottom: 2px solid hsla(229, 8%, 60%, 0.767);
+    padding-bottom: 20px;
+    color:hsl(229, 31%, 21%) ;
+    display: flex;
+    display: block;
+    flex-direction: column;
+}
+
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+.tab-content-feature{
+    display: flex;
+}
+  .tab-content .feature-image{
+height: 200px;
+width: 100%;
+margin-bottom: 20px;
+  }
+
+  .tab-content div .primary-button{
+      text-align: center;
+      display: block;
+  }
+
+/* DOWNLOADS */
+  h3.heading{
+      margin: 20px 0 20px 0;
+      text-align: center;
+      color:hsl(229, 31%, 21%) ;
+      font-size: 1.8rem;
+  }
+
+.Downloads{
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.chrome .download-grid,.firefox .download-grid,.opera .download-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+/* FAQs */
+
+.faqs{
+    margin-top: 20px;
+}
+.faq-input{
+    display: none;
+}
+
+.label{
+    border-bottom: 2px solid hsla(229, 8%, 60%, 0.74);
+}
+.faq-content{
+    display: none;
+}
+.faq-input:checked ~ .faq-content{
+    display: block;
+}
+
+
+/* CONTACT US */
+.contact-bg{
+    background-color:hsl(231, 69%, 60%) ;
+}
+.contact{
+   
+    padding: 40px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.contact h3{
+font-size: 1.1rem;
+margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 10px;
+}
+
+.contact input[type=email]{
+margin-bottom: 10px;
+}
+
+.contact a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    padding: 10px 30px 10px 30px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color:hsl(229, 31%, 21%) ;
+}
+
+footer li{
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+footer .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-icons img{
+    height: 20px;
+    width: 100%;
+    margin-right: 10px;
+}
+footer .social-icons img:last-child{
+    margin-right: 0;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+   
+
+    footer .container{
+      
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    footer .container li{
+        margin-right: 20px;
+    }
+
+    footer .container li:last-child{
+        margin-right: 0;
+    }
+
+    footer .container .footer-menu{
+        display: flex;
+    }
+    .contact h3{
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .contact p{
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+    }
+    .contact input[type=email]{
+        margin-bottom: 20px;
+        }
+
+        .Downloads{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4rem;
+            width: 70%;
+            margin: auto;
+            
+        }
+
+        .Downloads .chrome{
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .Downloads .firefox{
+            position: relative;
+            top: 50px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .Downloads .opera{
+            position: relative;
+            top: 100px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .faq-container{
+            margin-top: 200px;
+        }
+
+        .faqs{
+            margin-top: 50px;
+            width: 70%;
+            margin: auto;
+            position: relative;
+        }
+
+        .features-tab .buttons ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2rem;
+            width: 70%;
+            margin: auto;
+        }
+
+        .active[data-tab-content] {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+           
+          }
+.tab-content{
+    width: 70%;
+    margin: auto;
+}
+          .tab-content img.feature-image{
+              height: 300px;
+              width: 100%;
+              padding: 0 30px 0 30px;
+              
+             
+          }
+       .header-info{
+           display: grid;
+           grid-template-columns: 1fr  1fr;
+           width: 70%;
+           margin: auto;
+       }
+
+       .header-info .image img{
+           height: 250px;
+           width: 100%;
+          
+       }
+       .header-info .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+       }
+       .header-info .header-text{
+           display: flex;
+           align-items: flex-start;
+           justify-content: center;
+           flex-direction: column;
+       }
+       .header-info .header-text .para{
+           text-align: left;
+       }
+
+       .features-info{
+           width: 70%;
+           margin: auto;
+           margin-bottom: 70px;
+       }
+       .features-tab .buttons{
+           margin-bottom: 70px;
+       }
+
+       .features-tab .tab-content{
+           margin-bottom: 70px;
+       }
+
+       .Downloads{
+           margin-top: 70px;
+       }
+
+       .faqs-section-info{
+           margin-bottom: 70px;
+       }
+
+       .contact{
+           margin-top: 70px;
+           margin-bottom: 0;
+       }
+       
+       .header-buttons .primary-button {
+        text-decoration: none;
+        color: white;
+        background-color:hsl(231, 69%, 60%) ;
+        padding: 15px;
+        margin-top: 20px;
+        display: inline-block;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 1.4rem;
+        }
+        
+        .header-text a.firefox-button{
+        text-decoration: none;
+        color: white;
+        background-color:hsl(229, 8%, 60%) ;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 4px;
+        display: inline-block;
+        }
+  }
